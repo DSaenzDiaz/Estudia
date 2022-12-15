@@ -1,0 +1,46 @@
+body {
+    font-family: serif, Consolas, "Times New Roman", Arial;
+    height: 100vh;
+    background: linear-gradient(150deg, #639FAB, #1C5D99);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+}
+
+ .card {
+     display: flex;
+     background: #BBCDE5;
+     border-radius: 20px;
+     width: 50%;
+ }
+
+ .tittle {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 5px 0 5px 30px;
+ }
+
+ .definition {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px 0 10px 30px;
+ }
+
+@media only screen and (max-width: 656px),
+(max-device-width: 656px) {
+    .list {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
